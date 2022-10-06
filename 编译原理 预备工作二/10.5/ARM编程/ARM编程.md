@@ -14,7 +14,7 @@ qemu-arm ./test
 
 ```
 最终使用的版本：
-rm-linux-gnueabi-gcc test.c -S -o test.s 把C程序转换成.s程序查看其ARM代码
+arm-linux-gnueabi-gcc test.c -S -o test.s 把C程序转换成.s程序查看其ARM代码
 arm-linux-gnueabi-gcc -o test test.s -static 把arm程序转换为可执行程序
 qemu-arm ./test 利用qemu执行程序
 ```
