@@ -1,0 +1,106 @@
+program
+    Sequence
+        Sequence
+            DeclStmt
+                Id	name: a	scope: 0	type: int
+                UnaryExpr	op: minus
+                    IntegerLiteral	value: 1	type: int
+            DeclStmt
+                Id	name: b	scope: 0	type: int
+                IntegerLiteral	value: 1	type: int
+            FunctionDefine	function name: inc_a	type: int()
+                CompoundStmt
+                    Sequence
+                        Sequence
+                            Sequence
+                                DeclStmt
+                                    Id	name: b	scope: 2	type: int
+                                    Id	name: a	scope: 0	type: int
+                                AssignStmt
+                                    Id	name: b	scope: 0	type: int
+                                    BinaryExpr	op: add
+                                        Id	name: b	scope: 0	type: int
+                                        IntegerLiteral	value: 1	type: int
+                            AssignStmt
+                                Id	name: a	scope: 0	type: int
+                                Id	name: b	scope: 0	type: int
+                        ReturnStmt
+                            Id	name: a	scope: 0	type: int
+        FunctionDefine	function name: main	type: int()
+            CompoundStmt
+                Sequence
+                    Sequence
+                        Sequence
+                            Sequence
+                                Sequence
+                                    Sequence
+                                        DeclStmt
+                                            Id	name: k	scope: 2	type: int
+                                            IntegerLiteral	value: 5	type: int
+                                        WhileStmt
+                                            BinaryExpr	op: moreOrequal
+                                                Id	name: k	scope: 2	type: int
+                                                IntegerLiteral	value: 0	type: int
+                                            CompoundStmt
+                                                Sequence
+                                                    Sequence
+                                                        IfStmt
+                                                            BinaryExpr	op: logic and
+                                                                BinaryExpr	op: logic and
+                                                                    CallExpr	function name: inc_a	scope: 0	type: int()
+                                                                    CallExpr	function name: inc_a	scope: 0	type: int()
+                                                                CallExpr	function name: inc_a	scope: 0	type: int()
+                                                            CompoundStmt
+                                                                Sequence
+                                                                    Sequence
+                                                                        Sequence
+                                                                            ExprStmt
+                                                                                CallExpr	function name: putint	scope: 0	type: void()
+                                                                            ExprStmt
+                                                                                CallExpr	function name: putch	scope: 0	type: void()
+                                                                        ExprStmt
+                                                                            CallExpr	function name: putint	scope: 0	type: void()
+                                                                    ExprStmt
+                                                                        CallExpr	function name: putch	scope: 0	type: void()
+                                                        IfElseStmt
+                                                            BinaryExpr	op: logic and
+                                                                BinaryExpr	op: less
+                                                                    CallExpr	function name: inc_a	scope: 0	type: int()
+                                                                    IntegerLiteral	value: 14	type: int
+                                                                BinaryExpr	op: logic and
+                                                                    CallExpr	function name: inc_a	scope: 0	type: int()
+                                                                    BinaryExpr	op: add
+                                                                        BinaryExpr	op: sub
+                                                                            CallExpr	function name: inc_a	scope: 0	type: int()
+                                                                            CallExpr	function name: inc_a	scope: 0	type: int()
+                                                                        IntegerLiteral	value: 1	type: int
+                                                            CompoundStmt
+                                                                Sequence
+                                                                    Sequence
+                                                                        ExprStmt
+                                                                            CallExpr	function name: putint	scope: 0	type: void()
+                                                                        ExprStmt
+                                                                            CallExpr	function name: putch	scope: 0	type: void()
+                                                                    AssignStmt
+                                                                        Id	name: b	scope: 0	type: int
+                                                                        BinaryExpr	op: mul
+                                                                            Id	name: b	scope: 0	type: int
+                                                                            IntegerLiteral	value: 2	type: int
+                                                            CompoundStmt
+                                                                ExprStmt
+                                                                    CallExpr	function name: inc_a	scope: 0	type: int()
+                                                    AssignStmt
+                                                        Id	name: k	scope: 2	type: int
+                                                        BinaryExpr	op: sub
+                                                            Id	name: k	scope: 2	type: int
+                                                            IntegerLiteral	value: 1	type: int
+                                    ExprStmt
+                                        CallExpr	function name: putint	scope: 0	type: void()
+                                ExprStmt
+                                    CallExpr	function name: putch	scope: 0	type: void()
+                            ExprStmt
+                                CallExpr	function name: putint	scope: 0	type: void()
+                        ExprStmt
+                            CallExpr	function name: putch	scope: 0	type: void()
+                    ReturnStmt
+                        Id	name: a	scope: 0	type: int

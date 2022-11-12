@@ -1,0 +1,44 @@
+program
+    FunctionDefine	function name: main	type: int()
+        CompoundStmt
+            Sequence
+                Sequence
+                    Sequence
+                        DeclStmt
+                            Id	name: arr	scope: 2	type: int[]
+                        DeclStmt
+                            Id	name: i	scope: 2	type: int
+                            IntegerLiteral	value: 0	type: int
+                        DeclStmt
+                            Id	name: sum	scope: 2	type: int
+                            IntegerLiteral	value: 0	type: int
+                        WhileStmt
+                            CallExpr	function name: getint	scope: 0	type: int()
+                            CompoundStmt
+                                Sequence
+                                    AssignStmt
+                                        Id	name: arr	scope: 2	type: int[]
+                                        CallExpr	function name: getint	scope: 0	type: int()
+                                    AssignStmt
+                                        Id	name: i	scope: 2	type: int
+                                        BinaryExpr	op: add
+                                            Id	name: i	scope: 2	type: int
+                                            IntegerLiteral	value: 1	type: int
+                    WhileStmt
+                        Id	name: i	scope: 2	type: int
+                        CompoundStmt
+                            Sequence
+                                AssignStmt
+                                    Id	name: i	scope: 2	type: int
+                                    BinaryExpr	op: sub
+                                        Id	name: i	scope: 2	type: int
+                                        IntegerLiteral	value: 1	type: int
+                                AssignStmt
+                                    Id	name: sum	scope: 2	type: int
+                                    BinaryExpr	op: add
+                                        Id	name: sum	scope: 2	type: int
+                                        Id	name: arr	scope: 2	type: int[]
+                ReturnStmt
+                    BinaryExpr	op: mod
+                        Id	name: sum	scope: 2	type: int
+                        IntegerLiteral	value: 79	type: int

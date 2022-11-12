@@ -1,0 +1,18 @@
+program
+    Sequence
+        DeclStmt
+            Id	name: a	scope: 0	type: int[][0][0]
+            type: int[][0][0]
+                type: int[][0]
+                    type: int[]
+                        IntegerLiteral	value: 1	type: int
+                        IntegerLiteral	value: 2	type: int
+                        IntegerLiteral	value: 3	type: int
+                    type: int[]
+                        IntegerLiteral	value: 1	type: int
+                        IntegerLiteral	value: 2	type: int
+                        IntegerLiteral	value: 3	type: int
+                    type: int[]	zero array
+                    type: int[]	zero array
+        DeclStmt
+            Id	name: b	scope: 0	type: int[][0][0]
