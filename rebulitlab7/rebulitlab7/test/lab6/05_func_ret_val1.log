@@ -1,0 +1,4 @@
+you should return void, but return i32
+compiler: src/Ast.cpp:818: virtual void ReturnStmt::typeCheck(): Assertion `0' failed.
+timeout: the monitored command dumped core
+Aborted

@@ -1,0 +1,4 @@
+identifier "b" is already defined
+compiler: src/parser.y:420: int yyparse(): Assertion `false' failed.
+timeout: the monitored command dumped core
+Aborted

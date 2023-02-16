@@ -1,0 +1,4 @@
+redefinition func of 'error_func i32(i32)'
+test/lab6/04_func_redef.s: Assembler messages:
+test/lab6/04_func_redef.s:23: Error: symbol `func' is already defined
+test/lab6/04_func_redef.s:64: Error: symbol `error_func' is already defined
